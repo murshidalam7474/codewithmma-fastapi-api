@@ -35,7 +35,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 72
 # Google OAuth Config
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
 GOOGLE_CLIENT_SECRET =os.getenv("GOOGLE_CLIENT_SECRET")
-GOOGLE_REDIRECT_URI = "http://localhost:8080/auth/google/callback"
+GOOGLE_REDIRECT_URI = "https://codewithmma.vercel.app/auth/google/callback"
 GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/auth"
 GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token"
 GOOGLE_USER_INFO_URL = "https://www.googleapis.com/oauth2/v2/userinfo"
@@ -46,7 +46,7 @@ EMAIL_PORT = 587  # Standard port for TLS
 EMAIL_USERNAME = os.getenv("EMAIL_USERNAME")  # Your email username
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")  # Your email password
 EMAIL_FROM = os.getenv("EMAIL_FROM")  # The sender email address
-VERIFY_EMAIL_BASE_URL = "http://localhost:8080/verify-email"  # Base URL for verification
+VERIFY_EMAIL_BASE_URL = "https://codewithmma.vercel.app/verify-email"  # Base URL for verification
 
 # Password hashing context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
