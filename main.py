@@ -46,7 +46,7 @@ EMAIL_PORT = 587  # Standard port for TLS
 EMAIL_USERNAME = os.getenv("EMAIL_USERNAME")  # Your email username
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")  # Your email password
 EMAIL_FROM = os.getenv("EMAIL_FROM")  # The sender email address
-VERIFY_EMAIL_BASE_URL = "https://codewithmma.vercel.app/verify-email"  # Base URL for verification
+VERIFY_EMAIL_BASE_URL = "https://codewithmma-fastapi-api.onrender.com/verify-email"  # Base URL for verification
 
 # Password hashing context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
